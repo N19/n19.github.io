@@ -3,7 +3,7 @@ $(document).ready(function () {
 	/* Essa função gera uma cor aleatória */
 
 	function getRandomColor() {
-		var numbers = new Array;
+		var numbers = new Array();
 		for (var i = 0; i < 3; i++) {
 			numbers[i] = Math.floor(Math.random() * 255);
 		}

@@ -5,7 +5,7 @@ $(document).ready(function () {
 	function getRandomColor() {
 		var numbers = new Array();
 		for (var i = 0; i < 3; i++) {
-			numbers[i] = Math.floor(Math.random() * 255);
+			numbers.push(Math.floor(Math.random() * 256));
 		}
 		var color = 'rgb(' + numbers + ')';
 		return color;

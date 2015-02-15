@@ -3,33 +3,35 @@ module.exports = function(grunt) {
 		watch: {
 			jade: {
 				files: 'src/jade/*.jade',
-				task: ['jade']
+				tasks: ['jade']
 			},
 
 			stylus: {
 				files: 'src/stylus/*.styl',
-				task: ['stylus']
+				tasks: ['stylus']
 			},
 
 			uglify: {
-				files: 'src/stylus/*.js'
-				task: ['uglify']
+				files: 'src/js/*.js',
+				tasks: ['uglify']
 			}
-		}
+		},
 
-		// jade: {
-		// 	compile: {
-		// 		files: {
-		// 		}
-		// 	}
-		// },
+		jade: {
+			compile: {
+				files: {
+					'_layouts/default.html': 'src/jade/layout.jade'
+				}
+			}
+		},
 
-		// stylus: {
-		// 	compile: {
-		// 		files: {
-		// 		}
-		// 	}
-		// },
+		stylus: {
+			compile: {
+				files: {
+					'css/main.css': 'src/stylus/main.styl'
+				}
+			}
+		},
 
 		// uglify: {
 		// 	compile: {

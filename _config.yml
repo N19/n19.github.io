@@ -1,5 +1,6 @@
 # Site settings
 title: _nikolas
+author: Nikolas Silva
 email: nikolas.rsilva@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Site de testes para pequenos projetos front-end.
@@ -9,3 +10,13 @@ github_username:  N19
 
 # Build settings
 markdown: kramdown
+
+links:
+  - title: Home
+    url: /
+  - title: Séries
+    url: /series
+  - title: Tags
+    url: /tags
+  - title: Sobre mim
+    url: /about

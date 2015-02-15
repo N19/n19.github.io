@@ -1,0 +1,29 @@
+doctype html
+html(lang="pt-br")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="description" content="{{ site.description }}")
+		meta(name="author" content="{{ site.author }}")
+		
+		title
+			| {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+
+		link(rel="stylsheet" href="css/main.css")
+	body
+		#wrapper
+			nav#menu
+				ul {% for link in site.links %}
+					li
+						a(href="{{ site.url }}{{ link.url }}") {{ link.title }}
+					| {% endfor %}
+
+			header#header 
+				h1 nikolas
+					span [silva]
+
+			| {{ content }}
+
+			footer#footer
+				p Site desenvolvido por 
+					a(href="http://github.com/{{ site.github_username }}" target="_blank") {{ site.author }}.

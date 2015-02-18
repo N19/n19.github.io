@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		watch: {
 			jade: {
-				files: 'src/jade/*.jade',
+				files: ['src/jade/*.jade', 'src/jade/pages/*.jade'],
 				tasks: ['jade']
 			},
 
@@ -20,7 +20,13 @@ module.exports = function(grunt) {
 		jade: {
 			compile: {
 				files: {
-					'_layouts/default.html': 'src/jade/layout.jade'
+					// layouts
+					'_layouts/default.html': 'src/jade/layout.jade',
+					'_layouts/page.html': 'src/jade/page.jade',
+					'_layouts/post.html': 'src/jade/post.jade',
+					
+					// pages
+					'index.html': 'src/jade/pages/index.jade'
 				}
 			}
 		},
@@ -28,7 +34,9 @@ module.exports = function(grunt) {
 		stylus: {
 			compile: {
 				files: {
-					'css/main.css': 'src/stylus/main.styl'
+					'css/main.css': 'src/stylus/main.styl',
+					'css/page.css': 'src/stylus/page.styl',
+					'css/post.css': 'src/stylus/page.styl'
 				}
 			}
 		},

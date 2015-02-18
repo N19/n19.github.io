@@ -1,0 +1,10 @@
+nav#main-menu
+	input(type="checkbox" id="display-menu")
+	label(for="display-menu")
+		.menu-button
+
+	.content
+		ul {% for link in site.links %}
+			li
+				a(href="{{ link.url }}") {{ link.title }}
+			| {% endfor %}

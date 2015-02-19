@@ -34,19 +34,21 @@ module.exports = function(grunt) {
 		stylus: {
 			compile: {
 				files: {
-					'css/main.css': 'src/stylus/main.styl',
-					'css/page.css': 'src/stylus/page.styl',
-					'css/post.css': 'src/stylus/page.styl'
+					'assets/css/main.css': 'src/stylus/main.styl',
+					'assets/css/page.css': 'src/stylus/page.styl',
+					'assets/css/post.css': 'src/stylus/page.styl'
 				}
 			}
 		},
 
-		// uglify: {
-		// 	compile: {
-		// 		files: {
-		// 		}
-		// 	}
-		// }
+		uglify: {
+			compile: {
+				files: {
+					'assets/js/lib.js': 'src/js/lib.min.js',
+					'assets/js/main.js': 'src/js/main.min.js'
+				}
+			}
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');

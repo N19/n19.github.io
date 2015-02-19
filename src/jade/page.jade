@@ -2,7 +2,7 @@ doctype html
 html(lang="pt-br")
 	include _head.jade
 		block stylesheets
-			link(rel="stylesheet" href="css/page.css")
+			link(rel="stylesheet" href="{{ '/assets/css/page.css' | prepend: site.baseurl }}")
 
 	body
 		include _menu.jade

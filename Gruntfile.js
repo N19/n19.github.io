@@ -44,8 +44,7 @@ module.exports = function(grunt) {
 		uglify: {
 			compile: {
 				files: {
-					'assets/js/lib.js': 'src/js/lib.min.js',
-					'assets/js/main.js': 'src/js/main.min.js'
+					'assets/js/main.min.js': 'src/js/main.js'
 				}
 			}
 		}

@@ -6,7 +6,7 @@
 	background-color $baseColor
 	z-index 1
 	
-	& label
+	& #display-main-menu
 		position relative
 		display inline-block
 		width 4.5rem
@@ -29,27 +29,20 @@
 				top 1rem
 			
 			&:after
-				top 1.5rem
-				
-
-	& input[type=checkbox]
-		display none
-
-		&:checked
-			& ~ label .menu-button
-				margin-top 1rem
+				top 1.5rem				
+			
+		&.active
+			& .menu-button
 				transform rotateZ(45deg)
+				margin-top 1rem
 				
 				&:before
 					opacity 0
-
+					
 				&:after
 					margin-top -2rem
-					transform rotateZ(-90deg)
-				
-			& ~ label ~ .content
-				max-height 25rem
-				
+					transform rotateZ(-90deg)		
+
 	& .content
 		max-height 0
 		overflow hidden
@@ -77,4 +70,6 @@
 				
 			&:active
 				color $primaryColor
-			
+				
+		&.open
+			max-height 25rem

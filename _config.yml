@@ -8,8 +8,11 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://n19.github.io" # the base hostname & protocol for your site
 github_username: N19
 
-# Build settings
+# Conversion
 markdown: kramdown
+
+# Outputting
+permalink: /posts/:title
 
 links:
   - title: home

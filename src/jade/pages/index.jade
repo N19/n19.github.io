@@ -2,15 +2,18 @@
 |layout: default
 |---
 | 
-section.posts
-	ul.post-list {% for post in site.posts %}
-		li
-			span.post-meta {{ post.date | date: "%b %-d, %Y" }}
-			h2
-				a.post-link(href="{{ post.url | prepend: site.baseurl }}") {{ post.title }}
-				
-			p {{ post.content | strip_html | truncatewords: 42 }}&nbsp;
-				a(href="{{ post.url |prepend: site.baseurl }}") Leia mais
+section.posts {% for post in site.posts %}
+	article.post-item
+		.post-date
+			span.day {{ post.date | date: "%d" }}
+			span.month-year {{ post.date | date: "%b %Y" }}
 
-		| {% endfor %}
+		.post-content
+			h1.post-title
+				a.post-link(href="{{ post.url | prepend: site.baseurl }}") {{ post.title }}
+					
+			p.post-excerpt {{ post.excerpt | strip_html | truncatewords: 40 }} 
+				a.read-more(href="{{ post.url | prepend: site.baseurl }}") Leia mais
+
+	| {% endfor %}
 		

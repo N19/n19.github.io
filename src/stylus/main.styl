@@ -4,3 +4,39 @@
 @import "_menu"
 @import "_header"
 @import "_footer"
+
+.posts
+	position relative
+	width 95%
+	padding 1rem
+	margin 0 auto
+
+	& .post-item
+		padding 1rem 0 1rem 0
+		border-bottom 1px solid lighten($baseColor, 90%)
+		
+		& .post-date
+			float left
+			margin-right 1rem
+			
+			& .day
+				display block
+				font-size 3rem
+				text-align center
+				
+			& .month-year
+				font-size 1rem
+		
+		& .post-content
+			& .post-title
+				font-size 3rem
+				
+				& .post-link
+					text-decoration none
+						
+			& .post-excerpt
+				font-size 1.4rem
+				text-align justify
+				
+				& .read-more
+					display block

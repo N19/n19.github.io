@@ -1,13 +1,5 @@
-doctype html
-html(lang="pt-br")
-	include _head.jade
-		block stylesheets
-			link(rel="stylesheet" href="{{ '/assets/css/post.css' | prepend: site.baseurl }}")
-
-	body
-		include _menu.jade
-		include _header.jade
-
-		| {{ content }}
-
-		include _footer.jade
+|---
+|layout: default 
+|css: post
+|---
+| 

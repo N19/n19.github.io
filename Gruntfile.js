@@ -34,9 +34,9 @@ module.exports = function(grunt) {
         stylus: {
             compile: {
                 files: {
-                    'assets/css/main.css': 'src/stylus/main.styl',
-                    'assets/css/page.css': 'src/stylus/page.styl',
-                    'assets/css/post.css': 'src/stylus/post.styl'
+                    'assets/css/main.min.css': 'src/stylus/main.styl',
+                    'assets/css/page.min.css': 'src/stylus/page.styl',
+                    'assets/css/post.min.css': 'src/stylus/post.styl'
                 }
             }
         },

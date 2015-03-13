@@ -4,7 +4,7 @@ html(lang="pt-br")
         block stylesheets
             | {% if page.css %}
             |   {% for stylesheet in page.css %}
-            link(rel="stylesheet" href="{{ 'assets/css/stylesheet.css' | replace: 'stylesheet', stylesheet | prepend: site.baseurl }}")
+            link(rel="stylesheet" href="{{ 'assets/css/stylesheet.min.css' | replace: 'stylesheet', stylesheet | prepend: site.baseurl }}")
             |   {% endfor %}
             | {% endif %}
     body

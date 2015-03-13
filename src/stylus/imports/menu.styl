@@ -2,13 +2,14 @@
     position fixed
     width 100%
     top 0
+    font-size 0
     background-color $baseColor
     z-index 1
     
     & #menu-button
         display inline-block
-        width 4rem
-        height 3.8rem
+        width 4.9rem
+        height 4.4rem
         padding .7rem
         cursor pointer
         
@@ -16,29 +17,28 @@
             &, &:before, &:after
                 position relative
                 display block
-                width 3rem
-                height .5rem
-                padding 0
+                width 3.5rem
+                height .6rem
                 background-color #fff
                 transition all 300ms
                 
             &:before, &:after
                 content ''            
-                top 1rem
+                top 1.2rem
             
             &:after
-                top 1.5rem
+                top 1.8rem
 
         &.active
             & span
-                margin-top 1rem
+                margin-top 1.2rem
                 transform rotateZ(45deg)
                 
                 &:before
                     opacity 0
                     
                 &:after
-                    margin-top -2rem
+                    margin-top -2.4rem
                     transform rotateZ(-90deg)
 
     & .menu-content
@@ -58,7 +58,7 @@
                     padding .5rem 1rem .5rem 1rem
                     outline none
                     text-decoration none
-                    font-size 1.6rem
+                    font-size 2rem
                     color #fff
                 
                 &:hover

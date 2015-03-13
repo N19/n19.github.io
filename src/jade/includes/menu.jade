@@ -1,0 +1,8 @@
+nav#main-menu
+    #menu-button
+        span
+
+    ul.menu-content {% for item in site.main_menu %}
+        li.menu-item
+            a(href="{{ item.url }}") {{ item.title }}
+        | {% endfor %}

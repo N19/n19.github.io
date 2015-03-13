@@ -1,12 +1,12 @@
 # Site settings
-title: nikolas silva - front-end dev
+title: nikolas[silva]
 author: Nikolas Silva
 email: nikolas.rsilva@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Site de testes para pequenos projetos front-end.
+  Site pra testes front-end
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://n19.github.io" # the base hostname & protocol for your site
-github_username: N19
+github_username:  N19
 
 # Conversion
 markdown: kramdown
@@ -14,10 +14,11 @@ markdown: kramdown
 # Outputting
 permalink: /posts/:title
 
-links:
-  - title: home
-    url: /
-  - title: sobre
-    url: /sobre
-  - title: contato
-    url: /contato
+# Custom vars
+main_menu:
+ - title: home
+   url: /
+ - title: sobre
+   url: /sobre
+ - title: contato
+   url: /contato

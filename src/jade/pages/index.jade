@@ -1,19 +1,21 @@
 |---
 |layout: default
+|css:
+| - main
 |---
 | 
-section.posts {% for post in site.posts %}
-	article.post-item
-		.post-date
-			span.day {{ post.date | date: "%d" }}
-			span.month-year {{ post.date | date: "%b %Y" }}
+section.posts
+    | {% for post in site.posts %}
+    
+    article.post-item.clearfix
+        .post-date
+            span.day {{ post.date | date: "%d" }}
+            span.month-year {{ post.date | date: "%B %Y" }}
 
-		.post-content
-			h1.post-title
-				a.post-link(href="{{ post.url | prepend: site.baseurl }}") {{ post.title }}
-					
-			p.post-excerpt {{ post.excerpt | strip_html | truncatewords: 40 }} 
-				a.read-more(href="{{ post.url | prepend: site.baseurl }}") Leia mais
+        .post-content
+            h1.post-title
+                a.post-link(href="{{ post.url | prepend: site.baseurl }}") {{ post.title }}
+            p.post-preview {{ post.excerpt | strip_html | truncatewords: 40 }}&nbsp;
+                a.read-more(href="{{ post.url | prepend: site.baseurl }}") Leia mais
 
-	| {% endfor %}
-		
+    | {% endfor %}

@@ -1,9 +1,0 @@
-nav#main-menu
-	div#menu-button
-		span
-
-	.content
-		ul {% for link in site.links %}
-			li
-				a(href="{{ link.url }}") {{ link.title }}
-			| {% endfor %}

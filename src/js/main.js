@@ -48,7 +48,7 @@ function generateTitleSpan(str) {
 		}
 		titleSpan.innerHTML = randomName.join('');
 
-		if (tries > 15) randomName = str.split('');
+		if (tries > 10) randomName = str.split('');
 		if (randomName == str) {
 			clearInterval(generate);
 		}

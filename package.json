@@ -1,10 +1,12 @@
 {
-  "name": "nikolas-silva",
-  "version": "0.1.0",
+  "name": "nikolassilva.github.io",
+  "version": "1.0.0",
   "devDependencies": {
-    "grunt-contrib-jade": "^0.14.1",
-    "grunt-contrib-stylus": "^0.21.0",
-    "grunt-contrib-uglify": "^0.8.0",
-    "grunt-contrib-watch": "^0.6.1"
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.2"
   }
 }

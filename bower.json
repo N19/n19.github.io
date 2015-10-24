@@ -1,0 +1,7 @@
+{
+  "name": "nikolassilva.github.io",
+  "version": "1.0.0",
+  "dependencies": {
+    "font-awesome": "~4.4.0"
+  }
+}
